@@ -1,0 +1,25 @@
+/*
+ * Fonts
+ */
+/* line 3, /style/scss/elements/tabs.scss */
+.tabs a {
+  background-color: #86b2cc;
+  text-decoration: none;
+  font-size: 0.9em;
+  color: #5a5a5a;
+}
+
+/* line 9, /style/scss/elements/tabs.scss */
+.tabs a:hover {
+  background-color: #629bbd;
+}
+
+
+/* line 13, /style/scss/elements/tabs.scss */
+.tabs a.is-active {
+  background-color: #4e1e3a;
+  border: 1px solid #86b2cc;
+  color: #86b2cc;
+}
+
+

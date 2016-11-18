@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+function THEMENAME_preprocess_page(&$vars) {
+  $header = drupal_get_http_header("status");
+  if ($header == "404 Not Found") {
+    $vars['theme_hook_suggestions'][] = 'page__404';
+  }
+  elseif ($header == "403 Forbidden") {
+    $vars['theme_hook_suggestions'][] = 'page__403';
+  }
+}
